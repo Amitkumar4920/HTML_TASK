@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #one {
+        margin-left: 450px;
+      }
+      label {
+        width: 180px;
+        clear: left;
+        text-align: right;
+        padding-right: 10px;
+      }
+
+      input,
+      label {
+        float: left;
+      }
+      #two {
+        margin-left: 60px;
+      }
+    </style>
+    <title>Task7</title>
+  </head>
+  <body>
+    <div id="one">
+      <form action="submit_registration.php" method="POST">
+        <label for="full_name">Full Name: </label>
+        <input
+          type="text"
+          id="full_name"
+          name="full_name"
+          value="Vincent Maverick Durano"
+          required
+        /><br /><br />
+
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          value="Vinz"
+          required
+        /><br /><br />
+
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+        /><br /><br />
+
+        <label for="repassword">Re-enter Password:</label>
+        <input
+          type="password"
+          id="repassword"
+          name="repassword"
+          required
+        /><br /><br />
+
+        <label for="address">Address:</label>
+        <input
+          type="text"
+          id="address"
+          name="address"
+          value="Cebu, Philippines"
+          required
+        /><br /><br />
+
+        <label for="age">Age:</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          value="22"
+          required
+        /><br /><br />
+
+        <label for="gender">Gender:</label>
+
+        <select id="gender" name="country" required>
+          <option value="" disabled selected>Male</option>
+          <option value="USA">Female</option>
+          <br /><br />
+        </select>
+        <br />
+        <input type="submit" id="two" value="Save" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      table,
+      th,
+      td {
+        border: 2px solid black;
+      }
+      #one {
+        margin-left: 450px;
+      }
+    </style>
+    <title>Task8</title>
+  </head>
+  <body>
+    <div id="one">
+      <h2 style="color: blue">Registration Form</h2>
+      <form action="submit_registration.php" method="POST">
+        <table>
+          <tr>
+            <td>First Name:</td>
+            <td><input type="text" name="first_name" required /></td>
+          </tr>
+          <tr>
+            <td>Last Name:</td>
+            <td><input type="text" name="last_name" required /></td>
+          </tr>
+          <tr>
+            <td>Email:</td>
+            <td><input type="email" name="email" required /></td>
+          </tr>
+          <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password" required /></td>
+          </tr>
+          <tr>
+            <td>Re-enter Password:</td>
+            <td><input type="password" name="repassword" required /></td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td>
+              <input type="radio" name="gender" value="Male" required />
+              Male<br />
+              <input type="radio" name="gender" value="Female" required />
+              Female
+            </td>
+          </tr>
+          <tr>
+            <td>Age:</td>
+            <td><input type="number" name="age" required /></td>
+          </tr>
+          <tr>
+            <td>Phone Number:</td>
+            <td><input type="tel" name="phone" /></td>
+          </tr>
+          <tr>
+            <td>Address:</td>
+            <td><textarea name="address" rows="3" required></textarea></td>
+          </tr>
+          <tr>
+            <td>State:</td>
+            <td><input type="text" name="state" /></td>
+          </tr>
+          <tr>
+            <td>Country:</td>
+            <td>
+              <select name="country" required>
+                <option value="" disabled selected>Choose your country</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+                <!-- Add more options as needed -->
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>Languages known:</td>
+            <td>
+              <input type="checkbox" name="languages[]" value="English" />
+              English
+              <input type="checkbox" name="languages[]" value="Kannada" />
+              Kannada
+              <input type="checkbox" name="languages[]" value="Hindi" /> Hindi
+              <input type="checkbox" name="languages[]" value="Telugu" /> Telugu
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <input type="checkbox" name="declaration" checked required />
+              Hereby I declare all the given details are true
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <p style="margin-left: 300px">
+                Log in to <a href="https://ethnus.com/">Ethnus</a> website
+              </p>
+            </td>
+          </tr>
+        </table>
+        <br />
+        <div style="margin-left: 239px">
+          <input type="submit" value="Register" />
+        </div>
+      </form>
+      <br />
+    </div>
+  </body>
+</html>
